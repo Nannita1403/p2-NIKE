@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./public/logoNikeFlaticon.jpg" type="nikeLogo">
+</head>
+<header>
+    <img id="logoNike" src="./public/logo.jpg" alt="logoNike" className="logoNike"/>
+    <nav id="nav">
+      <ul >
+          <li>Novedades y destacados</li>
+          <li>Hombre</li>
+          <li>Mujer</li>
+          <li>Niño/a</li>
+          <li>Ofertas</li>
+      </ul>
+    </nav>
+    <div>
+      <div>
+          <img src="/public/lupa.jpg"/>
+          <input id="lupa" placeholder="Buscar" className="buscar"/>
+      </div>
+      <img src="/public/like.jpg"/>
+      <img src="/public/cesta.jpg"/>
+      <img id="user" src="./public/person.jpg">
+      <img id="menu" src="./public/menu.jpg">
+    </div>
+</header>
+<body>
+    <section id="womanFilter">
+        <h2>Zapatillas de Mujer</h2>
+    </section>
+    <main class="container">
+    <section class="filtros">
+      <label for="modelNikeFiltro">Selección de Modelo:</label>
+      <select id="modelNikeFiltro" onchange="filterProducts()"></select>
+
+      <label for="filtroPrecio">Ingrese Precio:</label>
+      <input type="number" id="filtroPrecio">
+      <button onclick="filterProducts()">Search</button>
+
+      <button onclick="clearFilters()">Borrar Filtros</button>
+      <h2 id="sinResultado" style="color: red; display: none;">No results found </h2>
+    </section>
+    <section class="products"></section>
+  </main>
+  <body>
+    
+  </body>
+  <footer>
+    <p>&copy; 2023 Carlos Calleja</p>
+    <div class="social-links">
+      <a href="https://github.com/CarlosCallejaSaez" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/carlos-calleja-saez/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
