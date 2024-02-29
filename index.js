@@ -1,6 +1,7 @@
-import './style.css'
-import nikeLogo from './public/logo.jpg'
 import './src/products.js'
+import logoNike from "./public/logo.jpg"
+
+
 
 const sectionFiltros = document.querySelector(".filtros");
 const sectionProducts = document.querySelector(".products");
