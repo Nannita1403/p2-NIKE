@@ -22,7 +22,7 @@ const products = [
   },
   {
     id: 3,
-    nombre: "Nike Air Force 1 `07 nature",
+    nombre: "Nike Air Force 1 `07",
     precio: 119.99,
     img: src = "./public/images/03air-force-1-07-next-nature-zapatillas-dgr2tk.jpg",
     specialType: "Superventas",
