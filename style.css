@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--primary-font);
@@ -84,7 +83,6 @@ header > nav ul {
   gap: var(--gap-a);
 }
 #nav {
-  overflow: hidden;
   height: 20px;
   max-width: 600px;
       } 
@@ -157,8 +155,9 @@ padding-bottom: 10px;
     padding:20px;
     gap:20px;
   }
-
-  /**/
+  #sinResultado {
+    margin: 90px;
+  }
 
   .cardProducts {
     display: flex;
@@ -320,8 +319,7 @@ aside {
   margin-left: var(--margin-a2);
 }
 /**/
-
-@media (max-width: 770px) {
+@media (max-width: 940px) {
   #nav {
   display: none;
   }
@@ -332,13 +330,6 @@ aside {
   }
   #menu {
     display:block;
-  }
-  header > div > div {
-  display: none;
-  }
-  header > div > img {
-    height: 20px;
-    width: 20px;
   }
   .filtros {
     display:flex;
@@ -353,7 +344,18 @@ aside {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    gap: 7px;
   }
+}
+@media (max-width: 770px) {
+  header > div > div {
+  display: none;
+  }
+  header > div > img {
+    height: 20px;
+    width: 20px;
+  }
+
   label {
     font-size: 14px;
   }
@@ -389,6 +391,12 @@ aside {
   .columnaDos > li > a {
     display: none;
   }
+  #sinResultado {
+    margin: 0px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+  }
 }
 
 @media (max-width: 370px) {
@@ -398,5 +406,11 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+  } 
+}
+
+@media (max-width: 330px) {
+  header > div > img {
+  display: none;
   }
 }
