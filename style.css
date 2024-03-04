@@ -17,6 +17,7 @@ a {
 
 body {
     min-height: 100svh;
+    margin: 0;
 }
 
 :root {
@@ -52,6 +53,7 @@ body {
   --margin-d: 100px
 
   --padding-a2: 10px;
+  --padding-a3: 20px;
   --padding-a: 30px;
   --padding-b: 40px;
   --padding-c: 50px;
@@ -144,13 +146,13 @@ padding-bottom: 10px;
   }*/
   
   .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
   }
   
   .filtros {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding:20px;
     gap:20px;
@@ -210,7 +212,7 @@ padding-bottom: 10px;
 }
 
 .specialType{
-margin-top: 12px;
+margin-top: 70px;
 color :var(--color-5);
 font-size: 18.72px;
 font-weight: 500;
@@ -219,7 +221,7 @@ font-weight: 500;
 .colores {
     position:relative;
     right: 25px;
-    top: 245px;
+    top: 295px;
     left: 2px;
     display: flex;
     align-items: center;
@@ -265,13 +267,16 @@ footer {
   background-color: var(--color-3);
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: var(--margin-a2);
+  justify-content: center;
+  position: relative;
+  bottom: 0;
 }
 .nav-footer {
   display: grid;
   color: var(--color-1);
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: start;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
   width: 80%;
   margin-left: var(--margin-b);
   margin-top: var(--margin-a2);
@@ -296,12 +301,15 @@ footer {
 .nav-footer > ul > li {
   padding-bottom: 5px;
   padding-top: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .columnaDos > li > a {
   color: var(--color-2);
   font-size: 12px;
   font-weight: 400;
+  
 }
 
 .columnaDos > li > a :hover {
@@ -334,15 +342,57 @@ aside {
   }
   .filtros {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
   }
+  #boxFiltros {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  label {
+    font-size: 14px;
+  }
+  aside {
+    padding: var(--padding-a3);
+    margin-left: var(--margin-a2);
+  }
+}
+@media (max-width: 500px) {
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-footer > ul {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0px;
+  }
+  .nav-footer > ul > li {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  
+  .columnaUno > li > a {
+    color: var(--color-1);
+    font-size: 10px bold ;
+    font-weight: 500;
+    max-height: max-content;
+  }
+  .columnaDos > li > a {
+    display: none;
+  }
 }
 
 @media (max-width: 370px) {
-  
+
   .filtros {
     display:flex;
     flex-direction: column;

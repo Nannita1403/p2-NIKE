@@ -158,7 +158,7 @@ function filterProducts() {
   printProducts(filteredProducts);
 
   const sinResultado = document.getElementById("sinResultado");
-  sinResultado.style.display = filteredProducts.length === 0 ? "block" : "none";
+  sinResultado.style.display = filteredProducts.length === 0 ? "flex" : "none";
 }
 
 function clearFilters() {

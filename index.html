@@ -36,14 +36,15 @@
     </section>
     <main class="container">
     <section class="filtros">
+      <div id="boxFiltros">
       <label for="modelNikeFiltro">Selección de Modelo:</label>
       <select id="modelNikeFiltro" onchange="filterProducts()"></select>
 
       <label for="filtroPrecio">Ingrese Precio:</label>
       <input type="number" id="filtroPrecio">
       <button onclick="filterProducts()">Buscar</button>
-
       <button onclick="clearFilters()">Borrar Filtros</button>
+      </div>
       <h2 id="sinResultado" style="color: red; display: none;">No results found </h2>
     </section>
   </main>
